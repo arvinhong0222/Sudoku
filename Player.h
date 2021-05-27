@@ -14,8 +14,8 @@ public:
 	string getPlay() const;
 
 private:
-	int gameDifficulty;//遊戲難度 1:easy, 2:normal, 3:hard
-	string play;//是否繼續遊玩 1:Continue 0:Quit
+	int gameDifficulty;//遊戲難度 1:簡單, 2:中等, 3:艱難 
+	string play;//是否繼續遊玩 1:繼續 0:結束 
 
 };
 #endif

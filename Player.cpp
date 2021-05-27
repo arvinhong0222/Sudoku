@@ -4,12 +4,12 @@ Player::Player() {
 	play = "1";
 }
 void Player::setGameDifficulty() {
-	cout << "Please enter game difficulty:\n";
-	cout << "1:Easy, 2:Normal, 3:Hard\n";
+	cout << "請輸入遊戲難度:\n";
+	cout << "1:簡單, 2:適中, 3:艱難\n";
 	cin >> gameDifficulty;
 	while (gameDifficulty < 1 || gameDifficulty > 3) {
-		cout << "Please re-enter the game difficulty\n";
-		cout << "1:Easy, 2:Normal, 3:Hard\n";
+		cout << "請重新輸入遊戲難度\n";
+		cout << "1:簡單, 2:適中, 3:艱難\n";
 		cin >> gameDifficulty;
 	}
 }
