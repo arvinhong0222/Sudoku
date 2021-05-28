@@ -16,15 +16,7 @@ void Problem::setSudokuAnswer(int newSudokuAnswer[][9]) {
 }
 
 void Problem::getSudokuAnswer()  {
-    /*cout << "------------------------" << endl;
-    for (int i = 0; i < 9; i++) {
-        for (int j = 0; j < 9; j++) {
-            cout << " " << sudo[i][j];
-            (j % 3 == 2) ? (cout << " |") : (cout << "");
-        }
-        cout << endl;
-        if (i % 3 == 2)cout << "------------------------" << endl;
-    }*/
+   
     
     int total = 0;
     for (int i = 0; i < 9; i++) {
@@ -37,11 +29,11 @@ void Problem::getSudokuAnswer()  {
 
     if (total == 81) {  
         setAnswer("Clear");//結束
-        cout << "Clear" << endl;
+        cout << "恭喜過關" << endl;
     }
     else {
         setAnswer("Wrong answer");//繼續重新輸入答案
-        cout << "Wrong answer" << endl;
+        cout << "答案錯誤" << endl;
     }
 
     
